@@ -38,21 +38,18 @@
 						of Birth</label>
 					<div class="p-col">
 						<p:datePicker id="dt_nascimento"
-							value="#{userBean.user.dtNascimento}"
-							requiredMessage="The Date of Birth field is mandatory">
+							value="#{userBean.user.dtNascimento}">
 							<f:validateLength minimum="10" maximum="255" />
 							<f:ajax event="blur" render="messages" />
 						</p:datePicker>
 					</div>
 				</div>
-
-
+				
 
 				<div class="p-field p-grid">
 					<label for="email" class="p-col-fixed" style="width: 100px">E-mail</label>
 					<div class="p-col">
-						<p:inputText id="email" value="#{userBean.user.email}"
-							requiredMessage="The E-mail field is mandatory">
+						<p:inputText id="email" value="#{userBean.user.email}">
 							<f:ajax event="blur" render="messages" />
 						</p:inputText>
 					</div>
